@@ -8,16 +8,16 @@
 
 import UIKit
 
-class CircleViewController: UIViewController {
+class HemisphereViewController: UIViewController {
     
- 
+    
     @IBOutlet weak var labelOutput: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        ç
         //Changed the text of the label
-        labelOutput.text = "Circle page"
+        labelOutput.text = "Hemisphere page"
     }
     
     
