@@ -15,7 +15,7 @@ class HemisphereViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        ç
+        
         //Changed the text of the label
         labelOutput.text = "Hemisphere page"
     }
