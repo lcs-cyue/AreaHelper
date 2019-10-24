@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		533C8504235F7AC6003F8895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C8503235F7AC6003F8895 /* AppDelegate.swift */; };
-		533C8506235F7AC6003F8895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C8505235F7AC6003F8895 /* ViewController.swift */; };
+		533C8506235F7AC6003F8895 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C8505235F7AC6003F8895 /* MainViewController.swift */; };
 		533C8509235F7AC6003F8895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533C8507235F7AC6003F8895 /* Main.storyboard */; };
 		533C850B235F7AC9003F8895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533C850A235F7AC9003F8895 /* Assets.xcassets */; };
 		533C850E235F7AC9003F8895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533C850C235F7AC9003F8895 /* LaunchScreen.storyboard */; };
+		53F9568C23622F5000AB3C78 /* RectangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F9568B23622F5000AB3C78 /* RectangleViewController.swift */; };
+		53F9568E236231B200AB3C78 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F9568D236231B200AB3C78 /* CircleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		533C8500235F7AC6003F8895 /* AreaHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AreaHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		533C8503235F7AC6003F8895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		533C8505235F7AC6003F8895 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		533C8505235F7AC6003F8895 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		533C8508235F7AC6003F8895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		533C850A235F7AC9003F8895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		533C850D235F7AC9003F8895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		533C850F235F7AC9003F8895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F9568B23622F5000AB3C78 /* RectangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViewController.swift; sourceTree = "<group>"; };
+		53F9568D236231B200AB3C78 /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 		533C84F7235F7AC6003F8895 = {
 			isa = PBXGroup;
 			children = (
+				53F9568D236231B200AB3C78 /* CircleViewController.swift */,
+				53F9568B23622F5000AB3C78 /* RectangleViewController.swift */,
 				533C8502235F7AC6003F8895 /* AreaHelper */,
 				533C8501235F7AC6003F8895 /* Products */,
 			);
@@ -55,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				533C8503235F7AC6003F8895 /* AppDelegate.swift */,
-				533C8505235F7AC6003F8895 /* ViewController.swift */,
+				533C8505235F7AC6003F8895 /* MainViewController.swift */,
 				533C8507235F7AC6003F8895 /* Main.storyboard */,
 				533C850A235F7AC9003F8895 /* Assets.xcassets */,
 				533C850C235F7AC9003F8895 /* LaunchScreen.storyboard */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				533C8506235F7AC6003F8895 /* ViewController.swift in Sources */,
+				533C8506235F7AC6003F8895 /* MainViewController.swift in Sources */,
+				53F9568C23622F5000AB3C78 /* RectangleViewController.swift in Sources */,
+				53F9568E236231B200AB3C78 /* CircleViewController.swift in Sources */,
 				533C8504235F7AC6003F8895 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

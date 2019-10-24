@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class RectangleViewController: UIViewController {
+    
+    @IBOutlet weak var labelOutput: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //Changed the text of the label
+        labelOutput.text = "Rectangle page"
     }
-
-
+    
+    
 }
 
