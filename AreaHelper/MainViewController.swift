@@ -32,7 +32,6 @@ class MainViewController: UIViewController {
         //Print the message
         print(message)
 
-
     }
 
 
