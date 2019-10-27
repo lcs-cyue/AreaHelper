@@ -246,6 +246,8 @@
                         <viewLayoutGuide key="safeArea" id="cnO-HV-JUO"/>
                     </view>
                     <connections>
+                        <outlet property="RadiusValue" destination="bP3-rN-0Ja" id="Aoy-RF-Yvv"/>
+                        <outlet property="answerPad" destination="zi3-i1-df5" id="jdR-RZ-yDX"/>
                         <outlet property="labelOutput" destination="46s-Ad-y4Y" id="7fF-bl-41g"/>
                     </connections>
                 </viewController>
