@@ -17,7 +17,7 @@ class RectangleViewController: UIViewController {
     @IBOutlet weak var answerPad: UILabel!
     
     
-    //    @IBOutlet weak var widthValue: UITextField!
+//    @IBOutlet weak var widthValue: UITextField!
 //    @IBOutlet weak var answerPad: UIView!
 
     
@@ -89,7 +89,7 @@ class RectangleViewController: UIViewController {
         
         let areaResult = areaOfRectangle(length: lengthValue, width: widthValue)
         
-        answerPad.text = "Area is \(areaResult)"
+        answerPad.text = "Area is \(areaResult)m^2"
 
     }
     

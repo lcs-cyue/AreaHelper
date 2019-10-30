@@ -12,18 +12,24 @@ import AVFoundation
 class CircleViewController: UIViewController {
     
  
-    @IBOutlet weak var answerPad: UIView!
-    @IBOutlet weak var labelOutput: UILabel!
-    @IBOutlet weak var RadiusValue: UITextField!
+    
+    @IBOutlet weak var answerPad: UILabel!
+    @IBOutlet weak var radiusValue: UITextField!
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //Changed the text of the label
-        labelOutput.text = "Circle page"
+        
+        speak(message: "please enter the value")
+        
     }
-    
+       
+        
     //A function that will speak whatever message is provided
     func speak(message: String) {
         
@@ -41,11 +47,41 @@ class CircleViewController: UIViewController {
         
     }
     
-    /// Finds the area of a circle
-    /// - Parameter radius: the radius of the circle
-    /// - Returns: the area of the circle
-    func areaOfCircle(radius: Double) -> Double {
-        return Double.pi * pow(radius, 2.0)
-    }
+    
+    
+    
+    // Will be used to check the value
+   
+    @IBAction func checkValue(_ sender: Any) {
+        
+        
+        //Obtain the guss value in the textfield
+        guard let Text = radiusValue.text, Text != "" else {
+            speak(message: "Bro, try entering a value.")
+            return
+        }
+        
+        
+        //Try to convert the string into an integer data type
+        guard let radiusValue = Double(Text) else {
+            speak(message: "Hey, how about entering a number?")
+            return
+        }
+        
+        
+        // Finds the area of a circle
+        // - Parameter radius: the radius of the circle
+        // - Returns: the area of the circle
+        func areaOfCircle(radius: Double) -> Double {
+            return Double.pi * pow(radius, 2.0)
+        }
+        
+    
+    let areaResult = areaOfCircle(radius: radiusValue)
+    
+    answerPad.text = "Area is \(areaResult)m^2"
+    
 }
 
+
+}

@@ -181,28 +181,35 @@
                                 <rect key="frame" x="41" y="105" width="327" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgO-aV-e2S">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="vkc-Ew-if6">
+                                <rect key="frame" x="20" y="462" width="335" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrO-el-Yo5">
                                 <rect key="frame" x="147" y="394" width="80" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="checkValue:" destination="AxP-EV-lBi" eventType="touchUpInside" id="GEx-E7-6bN"/>
+                                    <action selector="checkValue:" destination="22l-Lm-T3I" eventType="touchUpInside" id="gC3-pl-vfe"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-kz-miQ">
-                                <rect key="frame" x="67" y="482" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zsY-el-yzQ"/>
                     </view>
                     <connections>
-                        <outlet property="labelOutput" destination="PEw-0m-tdp" id="djl-hw-TUJ"/>
+                        <outlet property="answerPad" destination="vkc-Ew-if6" id="VyG-aG-foo"/>
+                        <outlet property="radiusValue" destination="DoZ-VY-d6w" id="uhC-af-1Mp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0n-qr-O1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928" y="812"/>
+            <point key="canvasLocation" x="1927.2" y="811.84407796101959"/>
         </scene>
         <!--Circle-->
         <scene sceneID="FVI-pR-RHM">
@@ -235,25 +242,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="checkValue:" destination="AxP-EV-lBi" eventType="touchUpInside" id="J3k-p3-aXB"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zi3-i1-df5">
-                                <rect key="frame" x="67" y="495" width="240" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="o0t-Ph-Hqy">
+                                <rect key="frame" x="24" y="489" width="335" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cnO-HV-JUO"/>
                     </view>
                     <connections>
-                        <outlet property="RadiusValue" destination="bP3-rN-0Ja" id="Aoy-RF-Yvv"/>
-                        <outlet property="answerPad" destination="zi3-i1-df5" id="jdR-RZ-yDX"/>
-                        <outlet property="labelOutput" destination="46s-Ad-y4Y" id="7fF-bl-41g"/>
+                        <outlet property="answerPad" destination="o0t-Ph-Hqy" id="tv1-cC-pOJ"/>
+                        <outlet property="radiusValue" destination="bP3-rN-0Ja" id="6Cs-mZ-k3z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7r-7y-ZUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928" y="130"/>
+            <point key="canvasLocation" x="1927.2" y="129.98500749625188"/>
         </scene>
     </scenes>
     <resources>
